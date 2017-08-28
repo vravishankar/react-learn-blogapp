@@ -6,10 +6,10 @@ import axios from 'axios'
 class Signin extends Component {
     constructor(props) {
         super(props)
-        this.setState({
+        this.state = {
             username: '',
             password: ''
-        })
+        }
         this.handleUsernameChange = this.handleUsernameChange.bind(this)
         this.handlePasswordChange = this.handlePasswordChange.bind(this)
         this.handleSignInClick = this.handleSignInClick.bind(this)
